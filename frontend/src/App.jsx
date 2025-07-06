@@ -12,13 +12,13 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const res = await axios.post('http://localhost:5000/business-data', form);
+    const res = await axios.post('https://growthproai-xd6i.onrender.com/business-data', form);
     setData(res.data);
     setLoading(false);
   };
 
   const regenerateHeadline = async () => {
-    const res = await axios.get(`http://localhost:5000/regenerate-headline?name=${form.name}&location=${form.location}`);
+    const res = await axios.get(`https://growthproai-xd6i.onrender.com/regenerate-headline?name=${form.name}&location=${form.location}`);
     setData((prev) => ({ ...prev, headline: res.data.headline }));
   };
 
