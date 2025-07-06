@@ -1,4 +1,4 @@
-# GrowthProAI – Full Stack Intern Assignment
+# GrowthProAI
 
 ## 🎯 Objective
 Build a Local Business Dashboard that simulates SEO and Google Business data for local businesses.
@@ -23,14 +23,12 @@ npm install
 npm run dev
 ```
 
-## 🌐 Features
-- Submit business name and location
-- Simulated Google rating & reviews
-- AI-style SEO headline with regenerate option
-
 ## 🔗 API Endpoints
 - `POST /business-data`
 - `GET /regenerate-headline?name=...&location=...`
 
 ## 📤 Submission
-- GitHub repo with clean structure and optional deployed links.
+- GitHub repo link https://github.com/210303126129/GrowthProAI
+- Frontend Website URL using vercel : https://growth-pro-ai-gamma.vercel.app/
+- Backend API are exposed to Render : business-data-api: https://growthproai-xd6i.onrender.com/business-data', 
+    regenerate-headline-api: https://growthproai-xd6i.onrender.com/regenerate-headline?name=${name}&location=${location}
